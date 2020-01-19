@@ -3,7 +3,10 @@
 
 //int ft_strcmp(char *s1, char *s2);
 //int ft_write(int fd, char *str, int size);
-char *ft_strcpy(char *dest, char *src);
+//char *ft_strcpy(char *dest, char *src);
+//int ft_read(int fd, void *buffer, unsigned int count);
+int ft_strlen(char *str);
+char *ft_strdup(char *str);
 
 char *ft_strnew(int size, char c)
 {
@@ -18,15 +21,17 @@ char *ft_strnew(int size, char c)
 
 int main(void)
 {
-    char *yo;
-    char *xd;
+    char *str;
 
-    yo = ft_strnew(5, 'a');
-    xd = ft_strnew(4, 'x');
+    str = "yo l'ekipe";
 
-    printf("%s\n", ft_strcpy(yo, xd));
+//    yo = ft_strnew(5, 'a');
+//    xd = ft_strnew(4, 'x');
 
-    free(yo);
-    free(xd);
+//    ft_read(0, yo, 15);
+
+//    free(yo);
+//    free(xd);
+    printf("%s\n", ft_strdup(str));
 //    printf("sizeof int: %ld\nsizeof char* %ld", sizeof(int), sizeof(char*));
 }
