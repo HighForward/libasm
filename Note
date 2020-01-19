@@ -1,0 +1,1 @@
+nasm -f elf64 ft_strcmp.s -o ft_strcmp.o && gcc ft_strcmp.o main.c && ./a.out
