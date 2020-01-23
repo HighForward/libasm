@@ -1,7 +1,7 @@
 section .text
-	global ft_strlen
+	global _ft_strlen
 
-ft_strlen:
+_ft_strlen:
 	mov rax, -1         ;rax = valeur de retour
 
 loop:
