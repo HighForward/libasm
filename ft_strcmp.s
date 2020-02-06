@@ -17,6 +17,6 @@ loop:
     jmp loop
 
 end:
-    sub r8b, cl
-    movsx rax, r8b
+    sub cl, r8b
+    movsx rax, cl
     ret
